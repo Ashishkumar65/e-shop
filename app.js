@@ -59,9 +59,9 @@ const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
 const authRoutes = require('./routes/auth');
 
-const accessLogStream = fs.createWriteStream(path.join(__dirname,'acces.log'),{
-  flags: 'a'
-})
+// const accessLogStream = fs.createWriteStream(path.join(__dirname,'acces.log'),{
+//   flags: 'a'
+// })
 
 app.use(helmet());
 app.use(compression());
